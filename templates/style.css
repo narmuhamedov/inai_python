@@ -1,0 +1,22 @@
+body{
+    background-color: darkorchid;
+}
+h1{
+    font-family: Arial;
+    color: chartreuse;
+    font-weight: bold;
+}
+
+.qwerty{
+    color: crimson;
+}
+
+button{
+    background-color: aqua;
+    font-style: italic;
+    color: firebrick;
+}
+
+a{
+    text-decoration: none;
+}
