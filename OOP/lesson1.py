@@ -1,3 +1,55 @@
+class Old_Phone:
+    def __init__(self, call, number):
+        self.call = call
+        self.number = number
+
+    def can_call(self, number_phone):
+        if number_phone == '0550123321':
+            return f'This is {number_phone} can call'
+        else:
+            return f'This is {number_phone} not call'
+
+    def __str__(self):
+        return f'Звонок - {self.call}\n' \
+               f'Номер - {self.number}'
+
+phone1 = Old_Phone(call=True, number=True)
+print(phone1)
+print(phone1.can_call(str(input('Напишите номер? '))))
+
+class NewPhone(Old_Phone):
+    def __init__(self, call, number, camera, memory, cpu):
+        super().__init__(call, number)
+        self.camera = camera
+        self.memory = memory
+        self.cpu = cpu
+
+
+    def __str__(self):
+        return super(NewPhone, self).__str__()+f'camera - {self.camera}\n' \
+                                               f'memory - {self.memory}\n' \
+                                               f'cpu - {self.cpu}\n'
+newphone1 = NewPhone(call=True, number=True, camera='50mpx', memory=1024,
+                     cpu="6Hz")
+
+print(newphone1)
+print(newphone1.can_call(str(input('Number'))))
+
+class ModernPhone(NewPhone):
+    def __init__(self, call, number, camera, memory, cpu, game):
+        super().__init__(call, number, camera, memory, cpu)
+        self.game = game
+
+
+    def __str__(self):
+        return super(ModernPhone, self).__str__()+f'\ngame- {self.game}'
+
+
+modphone = ModernPhone(True, True, '50px', 32, '6Hz', True)
+print(modphone)
+
+
+
 #Создать суперкласс(на ваше усмотрение) к нему добавить минимум 10 атрибутов
 #Провести через self
 #Создать пару методов к супер классу и создать объекты
