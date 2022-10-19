@@ -1,3 +1,67 @@
+import turtle
+pen = turtle.Turtle()
+pen.color("black")
+pen.width(3)
+pen.hideturtle()
+pen.penup()
+pen.setposition(-30, 60)
+pen.pendown()
+pen.forward(60)
+pen.right(90)
+pen.forward(120)
+pen.right(90)
+pen.forward(60)
+pen.right(90)
+pen.forward(120)
+red_light=turtle.Turtle()
+red_light.shape('circle')
+red_light.color('red')
+red_light.penup()
+red_light.setposition(0,40)
+yellow_light=turtle.Turtle()
+yellow_light.shape('circle')
+yellow_light.color('yellow')
+yellow_light.penup()
+yellow_light.setposition(0,0)
+green_light=turtle.Turtle()
+green_light.shape('circle')
+green_light.color('green')
+green_light.penup()
+green_light.setposition(0,-40)
+
+pen = turtle.Turtle()
+pen.color("black")
+pen.width(3)
+pen.hideturtle()
+pen.penup()
+pen.setposition(+30, 60)
+pen.goto(+30, 60)
+pen.pendown()
+pen.forward(60)
+pen.goto(+30, 20)
+pen.goto(+90, 20)
+pen.goto(+30, -20)
+pen.goto(+90, -20)
+pen.goto(+30, -60)
+pen.goto(+10, -60)
+pen.goto(+10, -200)
+pen.goto(-10, -200)
+pen.goto(-10, -60)
+pen.goto(-30, -60)
+pen.goto(-90, -20)
+pen.goto(-30, -20)
+pen.goto(-90, 20)
+pen.goto(-30, 20)
+pen.goto(-30, 20)
+pen.goto(-90, 60)
+pen.goto(-30, 60)
+
+
+
+
+
+
+
 #for while
 
 # while 1:
